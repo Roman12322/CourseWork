@@ -83,8 +83,8 @@ namespace Курсовая
             PictureBox.Image = Image.FromFile("C:\\Users\\megaf\\OneDrive\\Рабочий стол\\Projects\\Summing.png");
             var calc = new Calculations();
             string checkCorrectData = calc.CalcSum(FirstCalcUp.Text, FirstCalcDown.Text, SecondCalcUp.Text, SecondCalcDown.Text);
-            if (checkCorrectData!=" " || FirstCalcUp.Text!="" || SecondCalcUp.Text != "" || FirstCalcDown.Text != "" || FirstCalcDown.Text != "0"
-                || SecondCalcDown.Text != "" || SecondCalcDown.Text != "0")
+            if (checkCorrectData == " " || FirstCalcUp.Text=="" || SecondCalcUp.Text == "" || FirstCalcDown.Text == "" || FirstCalcDown.Text == "0"
+                || SecondCalcDown.Text == "" || SecondCalcDown.Text == "0")
             {
                 IncorrectInput();
             }
@@ -102,8 +102,8 @@ namespace Курсовая
             PictureBox.Image = Image.FromFile("C:\\Users\\megaf\\OneDrive\\Рабочий стол\\Projects\\TakeOff.png");
             var calc = new Calculations();
             string checkCorrectData = calc.CalcTakeOff(FirstCalcUp.Text, FirstCalcDown.Text, SecondCalcUp.Text, SecondCalcDown.Text);
-            if (checkCorrectData != " " || FirstCalcUp.Text != "" || SecondCalcUp.Text != "" || FirstCalcDown.Text != "" || FirstCalcDown.Text != "0"
-                || SecondCalcDown.Text != "" || SecondCalcDown.Text != "0")
+            if (checkCorrectData == " " || FirstCalcUp.Text == "" || SecondCalcUp.Text == "" || FirstCalcDown.Text == "" || FirstCalcDown.Text == "0"
+                || SecondCalcDown.Text == "" || SecondCalcDown.Text == "0")
             {
                 IncorrectInput();
             }
